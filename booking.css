@@ -11,6 +11,42 @@
   margin-top: 1rem;
 }
 
+.direct-contact {
+  margin-top: 18px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.direct-contact h3 {
+  margin: 0 0 10px;
+  font-size: clamp(24px, 3vw, 31px);
+}
+
+.direct-contact p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.contact-button {
+  min-height: 48px;
+  border: 1px solid var(--sage-dark);
+  background: var(--white);
+  color: var(--ink);
+}
+
+.contact-button:hover {
+  background: var(--cream);
+}
+
 @media (max-width: 720px) {
   .calendly-panel iframe { min-height: 820px; }
+  .contact-actions, .contact-button { width: 100%; }
 }
