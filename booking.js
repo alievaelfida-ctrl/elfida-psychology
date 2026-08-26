@@ -1,5 +1,3 @@
-/Users/vilian/.zprofile:1: no such file or directory: /opt/homebrew/bin/brew
-/Users/vilian/.zprofile:2: no such file or directory: /opt/homebrew/bin/brew
 (() => {
   const publicWhatsAppNumber = '';
   const dateInput = document.getElementById('preferred-date');
