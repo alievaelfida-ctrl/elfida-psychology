@@ -1,5 +1,3 @@
-/Users/vilian/.zprofile:1: no such file or directory: /opt/homebrew/bin/brew
-/Users/vilian/.zprofile:2: no such file or directory: /opt/homebrew/bin/brew
 (() => {
   const allowed = ['utm_source','utm_medium','utm_campaign','utm_content','content_id','offer_version','landing_version','placement'];
   const clean = value => /^[a-z0-9_-]{1,80}$/.test(value || '') ? value : null;
