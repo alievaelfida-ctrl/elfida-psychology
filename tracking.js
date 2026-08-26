@@ -18,6 +18,12 @@
   document.querySelectorAll('a[href="#booking"]').forEach(link => link.addEventListener('click', () => {
     window.dataLayer.push({ event: 'consultation_primary_cta_click', cta_location: link.closest('header') ? 'header' : 'hero', cta_text: 'book_session' });
   }));
+  document.querySelectorAll('[data-contact-channel]').forEach(link => link.addEventListener('click', () => {
+    const channel = link.dataset.contactChannel;
+    if (channel === 'viber' || channel === 'whatsapp') {
+      window.dataLayer.push({ event: 'consultation_contact_click', contact_channel: channel });
+    }
+  }));
   const year = document.getElementById('year');
   if (year) year.textContent = String(new Date().getFullYear());
 })();
